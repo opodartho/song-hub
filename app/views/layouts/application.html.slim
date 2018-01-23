@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    title SongHub
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all'
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+      a.navbar-brand href="#"  SongHub
+      button.navbar-toggler aria-controls="navbarSupportedContent" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarSupportedContent" data-toggle="collapse" type="button" 
+        span.navbar-toggler-icon
+
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link href="#" 
+              | Home
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link href="#"  Songs
+    .container
+      = yield
+
+    = javascript_include_tag 'application'
+ 
