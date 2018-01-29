@@ -57,6 +57,7 @@ GEM
     cells-slim (0.0.5)
       cells (>= 4.0.1, < 6.0.0)
       slim (~> 3.0)
+    coderay (1.1.2)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
     declarative (0.0.10)
@@ -99,6 +100,11 @@ GEM
     pg (0.21.0)
     pipetree (0.1.1)
     popper_js (1.12.9)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-rails (0.3.6)
+      pry (>= 0.10.4)
     puma (3.11.2)
     rack (2.0.3)
     rack-test (0.8.2)
@@ -207,6 +213,7 @@ DEPENDENCIES
   cells-slim
   jbuilder
   pg
+  pry-rails
   puma
   rails (~> 5.1.4)
   sass-rails
