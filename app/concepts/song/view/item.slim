@@ -1,0 +1,10 @@
+.song-preview
+  h5= title
+  p= "Runtime: #{minutes}"
+  p.added= "Added at #{created_at}"
+
+  p.song-actions
+    => edit_link
+    = destroy_link
+
+hr
